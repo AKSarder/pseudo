@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <style>
+        h1:hover {
+            color: #444;
+            background: yellow;
+        }
+
+        .middle-person:hover {
+            color: red;
+            font-weight: 700;
+
+        }
+
+        /* li {
+            color: red;
+        }
+
+        li:first-child {
+            color: saddlebrown;
+        }
+
+        li:last-child {
+            color: chocolate;
+        } */
+
+        li:nth-child(2n) {
+            color: red;
+        }
+
+        h3::before {
+            content: 'hello ';
+        }
+
+        h3::after {
+            content: ' gello';
+            background: red;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+<h1>this is a normal</h1>
+<input type="text">
+<input type="text" class="middle-person">
+<input type="text">
+
+
+<a href="www.facebook.com">facebook a jao</a>
+<a href="https://www.underconsideration.com/brandnew/">underconsideration</a>
+<br>
+
+<h3>middle size header 1</h3>
+<h3>middle size header 2</h3>
+<h3>middle size header 3</h3>
+<h3>middle size header 4</h3>
+<h3>middle size header 5</h3>
+<h3>middle size header 6</h3>
+<ul>
+    <li>Alia</li>
+    <li>dalia</li>
+    <li>kalia</li>
+    <li>charia</li>
+    <li>gelia</li>
+    <li>palia</li>
+</ul>
+
+</html>
